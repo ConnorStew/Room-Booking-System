@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ComboBox?>
+<Scene xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ui.control.AddBookingControl">
+    <AnchorPane prefWidth="600" prefHeight="300">
+        <Text text="Date" layoutX="20" layoutY="20" />
+        <Text text="Start Hour" layoutX="250" layoutY="20" />
+        <Text text="End Hour" layoutX="320" layoutY="20" />
+        <DatePicker layoutX="20" layoutY="30" />
+        <ComboBox fx:id="startHours" layoutX="250" layoutY="30" />
+        <ComboBox layoutX="320" layoutY="30" />
+    </AnchorPane>
+</Scene>

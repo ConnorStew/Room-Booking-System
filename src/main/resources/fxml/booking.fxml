@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Scene xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.control.BookingControl" >
+	<BorderPane >
+		<center>
+			<TableView fx:id="tblBookings"  />
+		</center>
+		<bottom>
+			<GridPane >
+				<Button fx:id="btnAdd" text="Add Booking" onAction="#addBooking" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS" />
+				<Button fx:id="btnModify" text="Modify Booking" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" />
+				<Button fx:id="btnRemove" text="Remove Booking" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="1"  GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" />
+			</GridPane>
+		</bottom>
+	</BorderPane>
+</Scene>
